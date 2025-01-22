@@ -5,8 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_BENGA
-_COMMON := true
+TARGET_BENGAL_COMMON := true
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 32
