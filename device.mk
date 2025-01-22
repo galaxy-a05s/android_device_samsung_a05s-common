@@ -5,7 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/samsung/a05s
+TARGET_BENGA
+_COMMON := true
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 32
