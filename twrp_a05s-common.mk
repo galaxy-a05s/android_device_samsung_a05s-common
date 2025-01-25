@@ -14,3 +14,5 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from a05s device
 $(call inherit-product, device/samsung/a05s-common/device.mk)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a05s-common/recovery/root,recovery/root)
