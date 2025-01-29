@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/samsung/a05s-common
+COMMON_PATH := device/samsung/bengal-common
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
