@@ -1,4 +1,4 @@
-# android_device_samsung_bengal-common
+# Samsung Galaxy common tree for Bengal Devices
 
 ## Supported Devices
  - [A057M](https://github.com/galaxy-a05s/android_device_samsung_a05sub) (Not Tested)
