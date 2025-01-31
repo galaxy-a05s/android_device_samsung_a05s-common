@@ -61,6 +61,9 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 
+# Crypton kernel, TEST
+#TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilt/Image
+
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
@@ -151,7 +154,8 @@ TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
 TW_MAX_BRIGHTNESS := 200
 #TW_LOAD_VENDOR_MODULES := true
-#TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
+#TW_LOAD_VENDOR_BOOT_MODULES := true
+#TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules)\")
 #TW_DEVICE_VERSION := MrFluffyOven_a05s
 
 # Logging
