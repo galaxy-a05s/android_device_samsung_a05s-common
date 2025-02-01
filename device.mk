@@ -32,8 +32,6 @@ PRODUCT_PACKAGES += \
 
 # Recovery modules/dependencies
 TARGET_RECOVERY_DEVICE_MODULES += \
-    libdmabufheap \
-    libion \
     libxml2 \
     libkeymint \
     libkeymint_support \
@@ -42,8 +40,6 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     vendor.display.config@2.0 \
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libdmabufheap.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymint.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymint_support.so \
