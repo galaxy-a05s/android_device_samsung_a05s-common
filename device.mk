@@ -32,18 +32,22 @@ PRODUCT_PACKAGES += \
 
 # Recovery modules/dependencies
 TARGET_RECOVERY_DEVICE_MODULES += \
+    libion \
     libxml2 \
     libkeymint \
     libkeymint_support \
     libnetutils \
+    android.hidl.allocator@1.0 \
     vendor.display.config@1.0 \
     vendor.display.config@2.0 \
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymint.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymint_support.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.allocator@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so 
 
