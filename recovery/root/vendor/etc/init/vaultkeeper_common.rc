@@ -1,3 +1,7 @@
+on init
+    start vaultkeeper
+    start vaultkeeper_hal
+
 # VaultKeeper
 service vaultkeeper /vendor/bin/vaultkeeperd
     class core
