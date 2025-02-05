@@ -30,7 +30,7 @@ import /init.recovery.samsung.rc
 
 on early-init
     mkdir /mnt/vendor/efs 0771 radio system
-
+    
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     export LD_LIBRARY_PATH /system/lib64:/system/lib64/hw:/vendor/lib64:/vendor/lib64/hw
@@ -39,7 +39,11 @@ on init
     setprop sys.usb.configfs 1
     setprop prepdecrypt.setpatch true
     setprop prepdecrypt.loglevel 2
-
+    start vaultkeeper
+    start vaultkeeper_hal
+    start vendor.keymint-default
+    start vendor.gatekeeper-1-0
+    
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
