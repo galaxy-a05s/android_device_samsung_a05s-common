@@ -11,5 +11,5 @@ service gatekeeperd /system/bin/gatekeeperd /data/misc/gatekeeper
     seclabel u:r:recovery:s0
 
 on post-fs-data
-    mkdir /efs/gatekeeper 0775 system system
+    mkdir /efs/gatekeeper 0775 root root
     restorecon -R /efs/gatekeeper
